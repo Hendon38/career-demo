@@ -571,6 +571,10 @@
 </section>
 
 <section class="action-area">
+  <div style="margin-bottom: 8px; display: flex; align-items: center; gap: 10px;">
+    <span style="font-family: DM Mono, monospace; font-size: 11px; color: #6a6a80; text-transform: uppercase; letter-spacing: 1px;">API Key</span>
+    <span style="background: rgba(232,197,71,0.15); border: 1px solid rgba(232,197,71,0.3); color: #e8c547; font-family: DM Mono, monospace; font-size: 10px; padding: 2px 8px; border-radius: 4px; letter-spacing: 1px;">DEMO</span>
+  </div>
   <div class="api-key-row">
     <input type="text" class="api-input" id="apiKey" placeholder="Paste your Anthropic API key here (sk-ant-...) — runs a live Claude analysis">
     <button class="btn" id="analyzeBtn" onclick="runAnalysis()">Analyze Match →</button>
@@ -580,6 +584,7 @@
     </div>
   </div>
 
+  <div style="font-family: DM Mono, monospace; font-size: 11px; color: #6a6a80; margin-bottom: 20px; line-height: 1.6;">API key required for demo purposes only — the full product handles this behind the scenes. No key? <a href="https://console.anthropic.com" target="_blank" style="color: #7c6af0; text-decoration: none;">Get one free at console.anthropic.com</a></div>
   <div class="warning-banner" id="warningBanner">
     ⚠️ &nbsp; Make sure you've saved your analysis before clearing — it can't be recovered.
     <button onclick="document.getElementById('warningBanner').classList.remove('show')" style="background:none;border:none;color:#f09aaa;cursor:pointer;margin-left:auto;font-size:16px;">×</button>
